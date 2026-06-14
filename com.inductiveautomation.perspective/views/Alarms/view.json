@@ -1,0 +1,592 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1440
+    }
+  },
+  "root": {
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column",
+      "style": {
+        "backgroundColor": "#070D1A",
+        "minHeight": "100vh"
+      }
+    },
+    "children": [
+      {
+        "type": "ia.display.view",
+        "props": {
+          "path": "Components/Nav"
+        },
+        "meta": {
+          "name": "Nav"
+        },
+        "position": {
+          "basis": "56px",
+          "shrink": 0
+        }
+      },
+      {
+        "type": "ia.container.flex",
+        "props": {
+          "direction": "column",
+          "style": {
+            "padding": "24px 28px",
+            "gap": "20px",
+            "overflowY": "auto"
+          }
+        },
+        "children": [
+          {
+            "type": "ia.container.flex",
+            "props": {
+              "direction": "row",
+              "style": {
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              }
+            },
+            "children": [
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "gap": "2px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "ALARM MANAGEMENT",
+                      "style": {
+                        "fontSize": "22px",
+                        "fontWeight": "700",
+                        "color": "#E2E8F0"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Active alarms require acknowledgement",
+                      "style": {
+                        "fontSize": "12px",
+                        "color": "#64748B"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "row",
+                  "style": {
+                    "gap": "8px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "2 HIGH",
+                      "style": {
+                        "fontSize": "11px",
+                        "fontWeight": "700",
+                        "backgroundColor": "#EF4444",
+                        "color": "#E2E8F0",
+                        "borderRadius": "20px",
+                        "padding": "4px 14px"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "1 WARNING",
+                      "style": {
+                        "fontSize": "11px",
+                        "fontWeight": "700",
+                        "backgroundColor": "#F59E0B",
+                        "color": "#070D1A",
+                        "borderRadius": "20px",
+                        "padding": "4px 14px"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "2 INFO",
+                      "style": {
+                        "fontSize": "11px",
+                        "fontWeight": "700",
+                        "backgroundColor": "#112240",
+                        "color": "#94A3B8",
+                        "border": "1px solid #1E3D5C",
+                        "borderRadius": "20px",
+                        "padding": "4px 14px"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ia.container.flex",
+            "props": {
+              "direction": "column",
+              "style": {
+                "gap": "8px"
+              }
+            },
+            "children": [
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "row",
+                  "style": {
+                    "alignItems": "center",
+                    "gap": "14px",
+                    "padding": "12px 16px",
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "10px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "HIGH",
+                      "style": {
+                        "backgroundColor": "#F59E0B",
+                        "color": "#070D1A",
+                        "fontSize": "9px",
+                        "fontWeight": "700",
+                        "padding": "3px 10px",
+                        "borderRadius": "4px",
+                        "minWidth": "64px",
+                        "textAlign": "center"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "T-102-TEMP",
+                      "style": {
+                        "fontSize": "12px",
+                        "fontWeight": "700",
+                        "color": "#F59E0B",
+                        "minWidth": "110px",
+                        "fontFamily": "monospace"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Mix tank temperature exceeds 40 °C setpoint",
+                      "style": {
+                        "fontSize": "12px",
+                        "color": "#94A3B8"
+                      }
+                    },
+                    "position": {
+                      "grow": 1
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Jun 13 · 14:31",
+                      "style": {
+                        "fontSize": "11px",
+                        "color": "#64748B",
+                        "minWidth": "110px",
+                        "textAlign": "right"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.input.button",
+                    "props": {
+                      "text": "ACK",
+                      "style": {
+                        "fontSize": "10px",
+                        "fontWeight": "700",
+                        "color": "#60A5FA",
+                        "backgroundColor": "transparent",
+                        "border": "1px solid #2D7DD2",
+                        "borderRadius": "4px",
+                        "padding": "4px 12px",
+                        "cursor": "pointer"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "row",
+                  "style": {
+                    "alignItems": "center",
+                    "gap": "14px",
+                    "padding": "12px 16px",
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "10px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "WARNING",
+                      "style": {
+                        "backgroundColor": "#94A3B8",
+                        "color": "#0D1B2E",
+                        "fontSize": "9px",
+                        "fontWeight": "700",
+                        "padding": "3px 10px",
+                        "borderRadius": "4px",
+                        "minWidth": "64px",
+                        "textAlign": "center"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "P-101-CURR",
+                      "style": {
+                        "fontSize": "12px",
+                        "fontWeight": "700",
+                        "color": "#94A3B8",
+                        "minWidth": "110px",
+                        "fontFamily": "monospace"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Pump P-101 current draw above nominal 18 A",
+                      "style": {
+                        "fontSize": "12px",
+                        "color": "#94A3B8"
+                      }
+                    },
+                    "position": {
+                      "grow": 1
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Jun 13 · 14:28",
+                      "style": {
+                        "fontSize": "11px",
+                        "color": "#64748B",
+                        "minWidth": "110px",
+                        "textAlign": "right"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.input.button",
+                    "props": {
+                      "text": "ACK",
+                      "style": {
+                        "fontSize": "10px",
+                        "fontWeight": "700",
+                        "color": "#60A5FA",
+                        "backgroundColor": "transparent",
+                        "border": "1px solid #2D7DD2",
+                        "borderRadius": "4px",
+                        "padding": "4px 12px",
+                        "cursor": "pointer"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "row",
+                  "style": {
+                    "alignItems": "center",
+                    "gap": "14px",
+                    "padding": "12px 16px",
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "10px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "HIGH",
+                      "style": {
+                        "backgroundColor": "#EF4444",
+                        "color": "#070D1A",
+                        "fontSize": "9px",
+                        "fontWeight": "700",
+                        "padding": "3px 10px",
+                        "borderRadius": "4px",
+                        "minWidth": "64px",
+                        "textAlign": "center"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "T-101-LEVLO",
+                      "style": {
+                        "fontSize": "12px",
+                        "fontWeight": "700",
+                        "color": "#EF4444",
+                        "minWidth": "110px",
+                        "fontFamily": "monospace"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Feed tank level below 20% — refill required",
+                      "style": {
+                        "fontSize": "12px",
+                        "color": "#94A3B8"
+                      }
+                    },
+                    "position": {
+                      "grow": 1
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Jun 13 · 13:55",
+                      "style": {
+                        "fontSize": "11px",
+                        "color": "#64748B",
+                        "minWidth": "110px",
+                        "textAlign": "right"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.input.button",
+                    "props": {
+                      "text": "ACK",
+                      "style": {
+                        "fontSize": "10px",
+                        "fontWeight": "700",
+                        "color": "#60A5FA",
+                        "backgroundColor": "transparent",
+                        "border": "1px solid #2D7DD2",
+                        "borderRadius": "4px",
+                        "padding": "4px 12px",
+                        "cursor": "pointer"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "row",
+                  "style": {
+                    "alignItems": "center",
+                    "gap": "14px",
+                    "padding": "12px 16px",
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "10px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "INFO",
+                      "style": {
+                        "backgroundColor": "#60A5FA",
+                        "color": "#070D1A",
+                        "fontSize": "9px",
+                        "fontWeight": "700",
+                        "padding": "3px 10px",
+                        "borderRadius": "4px",
+                        "minWidth": "64px",
+                        "textAlign": "center"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "FV-103-POS",
+                      "style": {
+                        "fontSize": "12px",
+                        "fontWeight": "700",
+                        "color": "#60A5FA",
+                        "minWidth": "110px",
+                        "fontFamily": "monospace"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Valve FV-103 position drift detected (set 65%)",
+                      "style": {
+                        "fontSize": "12px",
+                        "color": "#94A3B8"
+                      }
+                    },
+                    "position": {
+                      "grow": 1
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Jun 13 · 13:40",
+                      "style": {
+                        "fontSize": "11px",
+                        "color": "#64748B",
+                        "minWidth": "110px",
+                        "textAlign": "right"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.input.button",
+                    "props": {
+                      "text": "ACK",
+                      "style": {
+                        "fontSize": "10px",
+                        "fontWeight": "700",
+                        "color": "#60A5FA",
+                        "backgroundColor": "transparent",
+                        "border": "1px solid #2D7DD2",
+                        "borderRadius": "4px",
+                        "padding": "4px 12px",
+                        "cursor": "pointer"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "row",
+                  "style": {
+                    "alignItems": "center",
+                    "gap": "14px",
+                    "padding": "12px 16px",
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "10px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "INFO",
+                      "style": {
+                        "backgroundColor": "#60A5FA",
+                        "color": "#070D1A",
+                        "fontSize": "9px",
+                        "fontWeight": "700",
+                        "padding": "3px 10px",
+                        "borderRadius": "4px",
+                        "minWidth": "64px",
+                        "textAlign": "center"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "FI-101-FLOW",
+                      "style": {
+                        "fontSize": "12px",
+                        "fontWeight": "700",
+                        "color": "#60A5FA",
+                        "minWidth": "110px",
+                        "fontFamily": "monospace"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Flow rate FI-101 reduced 8% below setpoint",
+                      "style": {
+                        "fontSize": "12px",
+                        "color": "#94A3B8"
+                      }
+                    },
+                    "position": {
+                      "grow": 1
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Jun 13 · 13:22",
+                      "style": {
+                        "fontSize": "11px",
+                        "color": "#64748B",
+                        "minWidth": "110px",
+                        "textAlign": "right"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.input.button",
+                    "props": {
+                      "text": "ACK",
+                      "style": {
+                        "fontSize": "10px",
+                        "fontWeight": "700",
+                        "color": "#60A5FA",
+                        "backgroundColor": "transparent",
+                        "border": "1px solid #2D7DD2",
+                        "borderRadius": "4px",
+                        "padding": "4px 12px",
+                        "cursor": "pointer"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "position": {
+          "grow": 1
+        }
+      }
+    ],
+    "meta": {
+      "name": "root"
+    }
+  }
+}

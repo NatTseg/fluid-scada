@@ -1,0 +1,222 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "row",
+      "style": {
+        "backgroundColor": "#0D1B2E",
+        "borderBottom": "1px solid #1E3D5C",
+        "padding": "0 24px",
+        "alignItems": "center",
+        "height": "56px",
+        "justifyContent": "space-between"
+      }
+    },
+    "children": [
+      {
+        "type": "ia.container.flex",
+        "props": {
+          "direction": "row",
+          "style": {
+            "alignItems": "center",
+            "gap": "10px"
+          }
+        },
+        "children": [
+          {
+            "type": "ia.display.label",
+            "props": {
+              "text": "⧉",
+              "style": {
+                "fontSize": "22px",
+                "color": "#2D7DD2",
+                "fontWeight": "700"
+              }
+            }
+          },
+          {
+            "type": "ia.display.label",
+            "props": {
+              "text": "FLUIDSCADA",
+              "style": {
+                "fontSize": "15px",
+                "fontWeight": "800",
+                "color": "#E2E8F0",
+                "letterSpacing": "2px"
+              }
+            }
+          },
+          {
+            "type": "ia.display.label",
+            "props": {
+              "text": "| PROCESS CONTROL",
+              "style": {
+                "fontSize": "11px",
+                "color": "#64748B",
+                "letterSpacing": "1px"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ia.container.flex",
+        "props": {
+          "direction": "row",
+          "style": {
+            "alignItems": "center",
+            "gap": "4px"
+          }
+        },
+        "children": [
+          {
+            "type": "ia.input.button",
+            "props": {
+              "text": "Overview",
+              "style": {
+                "color": "#E2E8F0",
+                "fontSize": "13px",
+                "fontWeight": "600",
+                "padding": "6px 16px",
+                "borderRadius": "8px",
+                "backgroundColor": "transparent",
+                "border": "none",
+                "cursor": "pointer"
+              },
+              "events": {
+                "dom": {
+                  "onClick": {
+                    "type": "script",
+                    "scope": "G",
+                    "config": {
+                      "script": "\tsystem.perspective.navigate('/')"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "ia.input.button",
+            "props": {
+              "text": "Tanks",
+              "style": {
+                "color": "#E2E8F0",
+                "fontSize": "13px",
+                "fontWeight": "600",
+                "padding": "6px 16px",
+                "borderRadius": "8px",
+                "backgroundColor": "transparent",
+                "border": "none",
+                "cursor": "pointer"
+              },
+              "events": {
+                "dom": {
+                  "onClick": {
+                    "type": "script",
+                    "scope": "G",
+                    "config": {
+                      "script": "\tsystem.perspective.navigate('/tanks')"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "ia.input.button",
+            "props": {
+              "text": "Trends",
+              "style": {
+                "color": "#E2E8F0",
+                "fontSize": "13px",
+                "fontWeight": "600",
+                "padding": "6px 16px",
+                "borderRadius": "8px",
+                "backgroundColor": "transparent",
+                "border": "none",
+                "cursor": "pointer"
+              },
+              "events": {
+                "dom": {
+                  "onClick": {
+                    "type": "script",
+                    "scope": "G",
+                    "config": {
+                      "script": "\tsystem.perspective.navigate('/trends')"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "ia.input.button",
+            "props": {
+              "text": "Alarms",
+              "style": {
+                "color": "#E2E8F0",
+                "fontSize": "13px",
+                "fontWeight": "600",
+                "padding": "6px 16px",
+                "borderRadius": "8px",
+                "backgroundColor": "transparent",
+                "border": "none",
+                "cursor": "pointer"
+              },
+              "events": {
+                "dom": {
+                  "onClick": {
+                    "type": "script",
+                    "scope": "G",
+                    "config": {
+                      "script": "\tsystem.perspective.navigate('/alarms')"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ia.container.flex",
+        "props": {
+          "direction": "row",
+          "style": {
+            "alignItems": "center",
+            "gap": "12px"
+          }
+        },
+        "children": [
+          {
+            "type": "ia.display.label",
+            "props": {
+              "text": "●",
+              "style": {
+                "fontSize": "10px",
+                "color": "#10B981"
+              }
+            }
+          },
+          {
+            "type": "ia.display.label",
+            "props": {
+              "text": "All Systems Online",
+              "style": {
+                "fontSize": "12px",
+                "color": "#94A3B8"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "name": "root"
+    }
+  }
+}

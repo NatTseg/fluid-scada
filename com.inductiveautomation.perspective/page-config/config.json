@@ -1,0 +1,17 @@
+{
+  "paths": {
+    "/": {
+      "view": "Overview"
+    },
+    "/tanks": {
+      "view": "Tanks"
+    },
+    "/trends": {
+      "view": "Trends"
+    },
+    "/alarms": {
+      "view": "Alarms"
+    }
+  },
+  "defaultPath": "/"
+}

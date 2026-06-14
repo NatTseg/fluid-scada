@@ -1,0 +1,1181 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1440
+    }
+  },
+  "root": {
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column",
+      "style": {
+        "backgroundColor": "#070D1A",
+        "minHeight": "100vh"
+      }
+    },
+    "children": [
+      {
+        "type": "ia.display.view",
+        "props": {
+          "path": "Components/Nav"
+        },
+        "meta": {
+          "name": "Nav"
+        },
+        "position": {
+          "basis": "56px",
+          "shrink": 0
+        }
+      },
+      {
+        "type": "ia.container.flex",
+        "props": {
+          "direction": "column",
+          "style": {
+            "padding": "24px 28px",
+            "gap": "20px",
+            "overflowY": "auto"
+          }
+        },
+        "children": [
+          {
+            "type": "ia.container.flex",
+            "props": {
+              "direction": "row",
+              "style": {
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              }
+            },
+            "children": [
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "gap": "2px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "TANK STATUS",
+                      "style": {
+                        "fontSize": "22px",
+                        "fontWeight": "700",
+                        "color": "#E2E8F0"
+                      }
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "props": {
+                      "text": "Level, Temperature & Pressure · Live",
+                      "style": {
+                        "fontSize": "12px",
+                        "color": "#64748B"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ia.container.flex",
+            "props": {
+              "direction": "row",
+              "style": {
+                "gap": "16px",
+                "flexWrap": "wrap"
+              }
+            },
+            "children": [
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "16px",
+                    "padding": "20px",
+                    "gap": "14px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "row",
+                      "style": {
+                        "alignItems": "center",
+                        "justifyContent": "space-between"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "gap": "2px"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "T-101",
+                              "style": {
+                                "fontSize": "22px",
+                                "fontWeight": "700",
+                                "color": "#E2E8F0"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "FEED TANK",
+                              "style": {
+                                "fontSize": "12px",
+                                "color": "#64748B"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "ONLINE",
+                          "style": {
+                            "fontSize": "10px",
+                            "fontWeight": "700",
+                            "backgroundColor": "#10B981",
+                            "color": "#070D1A",
+                            "borderRadius": "20px",
+                            "padding": "3px 12px"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "height": "280px",
+                        "border": "2px solid #1E3D5C",
+                        "borderRadius": "8px",
+                        "backgroundColor": "#112240",
+                        "overflow": "hidden"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "alignItems": "center",
+                            "justifyContent": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "72.5%",
+                              "style": {
+                                "fontSize": "32px",
+                                "fontWeight": "700",
+                                "color": "#60A5FA"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "",
+                          "style": {
+                            "backgroundColor": "#60A5FA",
+                            "opacity": "0.25"
+                          }
+                        },
+                        "position": {
+                          "basis": "203px",
+                          "shrink": 0
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "row",
+                      "style": {
+                        "gap": "12px"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "TEMPERATURE",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "22.3 °C",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#F59E0B"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "PRESSURE",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "1.2 bar",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#06B6D4"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "LEVEL",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "72.5 %",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#60A5FA"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "position": {
+                  "grow": 1
+                }
+              },
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "16px",
+                    "padding": "20px",
+                    "gap": "14px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "row",
+                      "style": {
+                        "alignItems": "center",
+                        "justifyContent": "space-between"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "gap": "2px"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "T-102",
+                              "style": {
+                                "fontSize": "22px",
+                                "fontWeight": "700",
+                                "color": "#E2E8F0"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "MIX TANK",
+                              "style": {
+                                "fontSize": "12px",
+                                "color": "#64748B"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "ONLINE",
+                          "style": {
+                            "fontSize": "10px",
+                            "fontWeight": "700",
+                            "backgroundColor": "#10B981",
+                            "color": "#070D1A",
+                            "borderRadius": "20px",
+                            "padding": "3px 12px"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "height": "280px",
+                        "border": "2px solid #1E3D5C",
+                        "borderRadius": "8px",
+                        "backgroundColor": "#112240",
+                        "overflow": "hidden"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "alignItems": "center",
+                            "justifyContent": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "45.8%",
+                              "style": {
+                                "fontSize": "32px",
+                                "fontWeight": "700",
+                                "color": "#8B5CF6"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "",
+                          "style": {
+                            "backgroundColor": "#8B5CF6",
+                            "opacity": "0.25"
+                          }
+                        },
+                        "position": {
+                          "basis": "128px",
+                          "shrink": 0
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "row",
+                      "style": {
+                        "gap": "12px"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "TEMPERATURE",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "38.5 °C",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#F59E0B"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "PRESSURE",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "1.8 bar",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#06B6D4"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "LEVEL",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "45.8 %",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#8B5CF6"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "position": {
+                  "grow": 1
+                }
+              },
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "16px",
+                    "padding": "20px",
+                    "gap": "14px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "row",
+                      "style": {
+                        "alignItems": "center",
+                        "justifyContent": "space-between"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "gap": "2px"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "T-103",
+                              "style": {
+                                "fontSize": "22px",
+                                "fontWeight": "700",
+                                "color": "#E2E8F0"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "PRODUCT TANK",
+                              "style": {
+                                "fontSize": "12px",
+                                "color": "#64748B"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "ONLINE",
+                          "style": {
+                            "fontSize": "10px",
+                            "fontWeight": "700",
+                            "backgroundColor": "#10B981",
+                            "color": "#070D1A",
+                            "borderRadius": "20px",
+                            "padding": "3px 12px"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "height": "280px",
+                        "border": "2px solid #1E3D5C",
+                        "borderRadius": "8px",
+                        "backgroundColor": "#112240",
+                        "overflow": "hidden"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "alignItems": "center",
+                            "justifyContent": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "85.2%",
+                              "style": {
+                                "fontSize": "32px",
+                                "fontWeight": "700",
+                                "color": "#10B981"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "",
+                          "style": {
+                            "backgroundColor": "#10B981",
+                            "opacity": "0.25"
+                          }
+                        },
+                        "position": {
+                          "basis": "238px",
+                          "shrink": 0
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "row",
+                      "style": {
+                        "gap": "12px"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "TEMPERATURE",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "23.1 °C",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#F59E0B"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "PRESSURE",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "1.1 bar",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#06B6D4"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "LEVEL",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "85.2 %",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#10B981"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "position": {
+                  "grow": 1
+                }
+              },
+              {
+                "type": "ia.container.flex",
+                "props": {
+                  "direction": "column",
+                  "style": {
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "16px",
+                    "padding": "20px",
+                    "gap": "14px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "row",
+                      "style": {
+                        "alignItems": "center",
+                        "justifyContent": "space-between"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "gap": "2px"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "T-104",
+                              "style": {
+                                "fontSize": "22px",
+                                "fontWeight": "700",
+                                "color": "#E2E8F0"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "CHEM ADDITIVE",
+                              "style": {
+                                "fontSize": "12px",
+                                "color": "#64748B"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "ONLINE",
+                          "style": {
+                            "fontSize": "10px",
+                            "fontWeight": "700",
+                            "backgroundColor": "#10B981",
+                            "color": "#070D1A",
+                            "borderRadius": "20px",
+                            "padding": "3px 12px"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "column",
+                      "style": {
+                        "height": "280px",
+                        "border": "2px solid #1E3D5C",
+                        "borderRadius": "8px",
+                        "backgroundColor": "#112240",
+                        "overflow": "hidden"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "alignItems": "center",
+                            "justifyContent": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "31.4%",
+                              "style": {
+                                "fontSize": "32px",
+                                "fontWeight": "700",
+                                "color": "#F59E0B"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "props": {
+                          "text": "",
+                          "style": {
+                            "backgroundColor": "#F59E0B",
+                            "opacity": "0.25"
+                          }
+                        },
+                        "position": {
+                          "basis": "87px",
+                          "shrink": 0
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "props": {
+                      "direction": "row",
+                      "style": {
+                        "gap": "12px"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "TEMPERATURE",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "18.0 °C",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#F59E0B"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "PRESSURE",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "0.8 bar",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#06B6D4"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      },
+                      {
+                        "type": "ia.container.flex",
+                        "props": {
+                          "direction": "column",
+                          "style": {
+                            "backgroundColor": "#112240",
+                            "border": "1px solid #1E3D5C",
+                            "borderRadius": "10px",
+                            "padding": "12px",
+                            "gap": "4px",
+                            "alignItems": "center"
+                          }
+                        },
+                        "children": [
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "LEVEL",
+                              "style": {
+                                "fontSize": "9px",
+                                "color": "#94A3B8",
+                                "letterSpacing": "1px",
+                                "fontWeight": "700"
+                              }
+                            }
+                          },
+                          {
+                            "type": "ia.display.label",
+                            "props": {
+                              "text": "31.4 %",
+                              "style": {
+                                "fontSize": "20px",
+                                "fontWeight": "700",
+                                "color": "#F59E0B"
+                              }
+                            }
+                          }
+                        ],
+                        "position": {
+                          "grow": 1
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "position": {
+                  "grow": 1
+                }
+              }
+            ]
+          }
+        ],
+        "position": {
+          "grow": 1
+        }
+      }
+    ],
+    "meta": {
+      "name": "root"
+    }
+  }
+}

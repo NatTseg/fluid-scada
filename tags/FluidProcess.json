@@ -1,0 +1,941 @@
+{
+  "name": "",
+  "tagType": "Folder",
+  "tags": [
+    {
+      "name": "FluidProcess",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Tanks",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "T101",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Level",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 72.5,
+                  "valueSource": "memory",
+                  "engUnit": "%",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 95,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 85,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 20,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "LoLo",
+                      "mode": "BelowValue",
+                      "setpointA": 10,
+                      "priority": "Critical"
+                    }
+                  ]
+                },
+                {
+                  "name": "Temperature",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 22.3,
+                  "valueSource": "memory",
+                  "engUnit": "\u00b0C",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 50,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 40,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Pressure",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 1.2,
+                  "valueSource": "memory",
+                  "engUnit": "bar",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 5.0,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 4.0,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 0.5,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Volume",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 18.1,
+                  "valueSource": "memory",
+                  "engUnit": "m\u00b3"
+                },
+                {
+                  "name": "FillRate",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 2.4,
+                  "valueSource": "memory",
+                  "engUnit": "m\u00b3/h"
+                }
+              ]
+            },
+            {
+              "name": "T102",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Level",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 45.8,
+                  "valueSource": "memory",
+                  "engUnit": "%",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 95,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 85,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 15,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "LoLo",
+                      "mode": "BelowValue",
+                      "setpointA": 5,
+                      "priority": "Critical"
+                    }
+                  ]
+                },
+                {
+                  "name": "Temperature",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 38.5,
+                  "valueSource": "memory",
+                  "engUnit": "\u00b0C",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 55,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 42,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 25,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Pressure",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 1.8,
+                  "valueSource": "memory",
+                  "engUnit": "bar",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 5.0,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 4.0,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "AgitatorSpeed",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 120.0,
+                  "valueSource": "memory",
+                  "engUnit": "RPM",
+                  "alarms": [
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 50,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "AgitatorRunning",
+                  "tagType": "AtomicTag",
+                  "dataType": "Boolean",
+                  "value": true,
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Volume",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 11.5,
+                  "valueSource": "memory",
+                  "engUnit": "m\u00b3"
+                }
+              ]
+            },
+            {
+              "name": "T103",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Level",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 85.2,
+                  "valueSource": "memory",
+                  "engUnit": "%",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 98,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 90,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 10,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "LoLo",
+                      "mode": "BelowValue",
+                      "setpointA": 5,
+                      "priority": "Critical"
+                    }
+                  ]
+                },
+                {
+                  "name": "Temperature",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 23.1,
+                  "valueSource": "memory",
+                  "engUnit": "\u00b0C",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 50,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 40,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Pressure",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 1.1,
+                  "valueSource": "memory",
+                  "engUnit": "bar",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 5.0,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 4.0,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Volume",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 21.3,
+                  "valueSource": "memory",
+                  "engUnit": "m\u00b3"
+                },
+                {
+                  "name": "ProductQuality",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 98.2,
+                  "valueSource": "memory",
+                  "engUnit": "%",
+                  "alarms": [
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 95,
+                      "priority": "High"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "T104",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Level",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 31.4,
+                  "valueSource": "memory",
+                  "engUnit": "%",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 90,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 80,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 10,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "LoLo",
+                      "mode": "BelowValue",
+                      "setpointA": 5,
+                      "priority": "Critical"
+                    }
+                  ]
+                },
+                {
+                  "name": "Temperature",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 18.0,
+                  "valueSource": "memory",
+                  "engUnit": "\u00b0C"
+                },
+                {
+                  "name": "Pressure",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 0.8,
+                  "valueSource": "memory",
+                  "engUnit": "bar"
+                },
+                {
+                  "name": "Volume",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 2.2,
+                  "valueSource": "memory",
+                  "engUnit": "m\u00b3"
+                },
+                {
+                  "name": "ChemConc",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 35.0,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pumps",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "P101",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Running",
+                  "tagType": "AtomicTag",
+                  "dataType": "Boolean",
+                  "value": true,
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Speed",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 1450.0,
+                  "valueSource": "memory",
+                  "engUnit": "RPM",
+                  "alarms": [
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 1800,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 500,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Current",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 15.2,
+                  "valueSource": "memory",
+                  "engUnit": "A",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 22,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 18,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Power",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 7.4,
+                  "valueSource": "memory",
+                  "engUnit": "kW"
+                },
+                {
+                  "name": "Status",
+                  "tagType": "AtomicTag",
+                  "dataType": "Int4",
+                  "value": 1,
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Runtime",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 2847.0,
+                  "valueSource": "memory",
+                  "engUnit": "h"
+                },
+                {
+                  "name": "Command",
+                  "tagType": "AtomicTag",
+                  "dataType": "Boolean",
+                  "value": true,
+                  "valueSource": "memory"
+                }
+              ]
+            },
+            {
+              "name": "P102",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Running",
+                  "tagType": "AtomicTag",
+                  "dataType": "Boolean",
+                  "value": true,
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Speed",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 1480.0,
+                  "valueSource": "memory",
+                  "engUnit": "RPM",
+                  "alarms": [
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 1800,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 500,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Current",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 14.8,
+                  "valueSource": "memory",
+                  "engUnit": "A",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 22,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 18,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Power",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 7.1,
+                  "valueSource": "memory",
+                  "engUnit": "kW"
+                },
+                {
+                  "name": "Status",
+                  "tagType": "AtomicTag",
+                  "dataType": "Int4",
+                  "value": 1,
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Runtime",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 1923.0,
+                  "valueSource": "memory",
+                  "engUnit": "h"
+                },
+                {
+                  "name": "Command",
+                  "tagType": "AtomicTag",
+                  "dataType": "Boolean",
+                  "value": true,
+                  "valueSource": "memory"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Valves",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "FV101",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Position",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 100.0,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                },
+                {
+                  "name": "Command",
+                  "tagType": "AtomicTag",
+                  "dataType": "Boolean",
+                  "value": true,
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Feedback",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 100.0,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                },
+                {
+                  "name": "Status",
+                  "tagType": "AtomicTag",
+                  "dataType": "Int4",
+                  "value": 1,
+                  "valueSource": "memory"
+                }
+              ]
+            },
+            {
+              "name": "FV102",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Position",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 100.0,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                },
+                {
+                  "name": "Command",
+                  "tagType": "AtomicTag",
+                  "dataType": "Boolean",
+                  "value": true,
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Feedback",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 100.0,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                },
+                {
+                  "name": "Status",
+                  "tagType": "AtomicTag",
+                  "dataType": "Int4",
+                  "value": 1,
+                  "valueSource": "memory"
+                }
+              ]
+            },
+            {
+              "name": "FV103",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Position",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 65.0,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                },
+                {
+                  "name": "Command",
+                  "tagType": "AtomicTag",
+                  "dataType": "Boolean",
+                  "value": true,
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Feedback",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 64.5,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                },
+                {
+                  "name": "Status",
+                  "tagType": "AtomicTag",
+                  "dataType": "Int4",
+                  "value": 1,
+                  "valueSource": "memory"
+                }
+              ]
+            },
+            {
+              "name": "FV104",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Position",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 100.0,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                },
+                {
+                  "name": "Command",
+                  "tagType": "AtomicTag",
+                  "dataType": "Boolean",
+                  "value": true,
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Feedback",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 100.0,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                },
+                {
+                  "name": "Status",
+                  "tagType": "AtomicTag",
+                  "dataType": "Int4",
+                  "value": 1,
+                  "valueSource": "memory"
+                }
+              ]
+            },
+            {
+              "name": "FV105",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Position",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 100.0,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                },
+                {
+                  "name": "Command",
+                  "tagType": "AtomicTag",
+                  "dataType": "Boolean",
+                  "value": true,
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Feedback",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 100.0,
+                  "valueSource": "memory",
+                  "engUnit": "%"
+                },
+                {
+                  "name": "Status",
+                  "tagType": "AtomicTag",
+                  "dataType": "Int4",
+                  "value": 1,
+                  "valueSource": "memory"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FlowMeters",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "FI101",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Flow",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 125.3,
+                  "valueSource": "memory",
+                  "engUnit": "L/min",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 200,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 160,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 20,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Totalizer",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 84203.5,
+                  "valueSource": "memory",
+                  "engUnit": "L"
+                },
+                {
+                  "name": "Temperature",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 22.5,
+                  "valueSource": "memory",
+                  "engUnit": "\u00b0C"
+                }
+              ]
+            },
+            {
+              "name": "FI102",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Flow",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 118.7,
+                  "valueSource": "memory",
+                  "engUnit": "L/min",
+                  "alarms": [
+                    {
+                      "name": "HiHi",
+                      "mode": "AboveValue",
+                      "setpointA": 200,
+                      "priority": "Critical"
+                    },
+                    {
+                      "name": "Hi",
+                      "mode": "AboveValue",
+                      "setpointA": 160,
+                      "priority": "High"
+                    },
+                    {
+                      "name": "Lo",
+                      "mode": "BelowValue",
+                      "setpointA": 20,
+                      "priority": "High"
+                    }
+                  ]
+                },
+                {
+                  "name": "Totalizer",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 71482.0,
+                  "valueSource": "memory",
+                  "engUnit": "L"
+                },
+                {
+                  "name": "Temperature",
+                  "tagType": "AtomicTag",
+                  "dataType": "Float8",
+                  "value": 22.1,
+                  "valueSource": "memory",
+                  "engUnit": "\u00b0C"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "System",
+          "tagType": "Folder",
+          "tags": [
+            {
+              "name": "TotalFlowRate",
+              "tagType": "AtomicTag",
+              "dataType": "Float8",
+              "value": 244.0,
+              "valueSource": "memory",
+              "engUnit": "L/min"
+            },
+            {
+              "name": "ProcessRunning",
+              "tagType": "AtomicTag",
+              "dataType": "Boolean",
+              "value": true,
+              "valueSource": "memory"
+            },
+            {
+              "name": "ActiveAlarms",
+              "tagType": "AtomicTag",
+              "dataType": "Int4",
+              "value": 2,
+              "valueSource": "memory"
+            },
+            {
+              "name": "ShiftProduction",
+              "tagType": "AtomicTag",
+              "dataType": "Float8",
+              "value": 8.42,
+              "valueSource": "memory",
+              "engUnit": "m\u00b3"
+            },
+            {
+              "name": "DailyProduction",
+              "tagType": "AtomicTag",
+              "dataType": "Float8",
+              "value": 31.75,
+              "valueSource": "memory",
+              "engUnit": "m\u00b3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
