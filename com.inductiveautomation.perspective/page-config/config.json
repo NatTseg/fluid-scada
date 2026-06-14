@@ -1,7 +1,7 @@
 {
   "pages": {
     "/": {
-      "title": "FluidSCADA \u2014 Overview",
+      "title": "FluidSCADA — Overview",
       "viewPath": "Overview"
     },
     "/tanks": {

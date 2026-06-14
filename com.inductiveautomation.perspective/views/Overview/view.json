@@ -3,58 +3,75 @@
   "params": {},
   "props": {
     "defaultSize": {
-      "width": 1440
+      "width": 1440,
+      "height": 900
     }
   },
   "root": {
     "type": "ia.container.flex",
+    "meta": {
+      "name": "OverviewRoot"
+    },
     "props": {
       "direction": "column",
+      "justify": "flex-start",
+      "alignItems": "stretch",
       "style": {
-        "backgroundColor": "#070D1A",
-        "minHeight": "100vh"
+        "backgroundColor": "#070D1A"
       }
     },
     "children": [
       {
         "type": "ia.display.view",
-        "props": {
-          "path": "Components/Nav"
-        },
         "meta": {
           "name": "Nav"
         },
+        "props": {
+          "path": "Components/Nav"
+        },
         "position": {
-          "basis": "56px",
-          "shrink": 0
+          "grow": 0,
+          "shrink": 0,
+          "basis": "56px"
         }
       },
       {
         "type": "ia.container.flex",
+        "meta": {
+          "name": "flex"
+        },
         "props": {
           "direction": "column",
+          "justify": "flex-start",
+          "alignItems": "stretch",
           "style": {
-            "padding": "24px 28px",
-            "gap": "20px",
-            "overflowY": "auto",
-            "overflowX": "auto"
+            "gap": "1.25rem",
+            "padding": "1.5rem 1.75rem",
+            "overflow": "auto"
           }
         },
         "children": [
           {
             "type": "ia.container.flex",
+            "meta": {
+              "name": "flex"
+            },
             "props": {
               "direction": "row",
-              "style": {
-                "alignItems": "center",
-                "justifyContent": "space-between"
-              }
+              "justify": "flex-start",
+              "alignItems": "center",
+              "style": {}
             },
             "children": [
               {
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "column",
+                  "justify": "flex-start",
+                  "alignItems": "stretch",
                   "style": {
                     "gap": "2px"
                   }
@@ -62,367 +79,747 @@
                 "children": [
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
                     "props": {
                       "text": "PROCESS OVERVIEW",
                       "style": {
-                        "fontSize": "22px",
-                        "fontWeight": "700",
                         "color": "#E2E8F0",
-                        "letterSpacing": "0.5px"
+                        "fontSize": "1.375rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
                     "props": {
-                      "text": "Fluid Processing Unit  ·  Jun 13, 2026  ·  14:32 UTC",
+                      "text": "Fluid Processing Unit  ·  Jun 14, 2026  ·  00:00 UTC",
                       "style": {
-                        "fontSize": "12px",
-                        "color": "#64748B"
+                        "color": "#64748B",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   }
-                ]
+                ],
+                "position": {
+                  "grow": 1,
+                  "shrink": 1,
+                  "basis": "0%"
+                }
               },
               {
                 "type": "ia.display.label",
+                "meta": {
+                  "name": "lbl"
+                },
                 "props": {
                   "text": "● Online · Auto",
                   "style": {
-                    "fontSize": "12px",
                     "color": "#10B981",
-                    "backgroundColor": "rgba(16,185,129,0.1)",
-                    "border": "1px solid rgba(16,185,129,0.3)",
+                    "fontSize": "0.75rem",
+                    "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                    "textAlign": "left",
+                    "letterSpacing": "normal",
+                    "backgroundColor": "rgba(16,185,129,0.08)",
+                    "border": "1px solid rgba(16,185,129,0.25)",
                     "borderRadius": "20px",
                     "padding": "4px 14px"
                   }
-                }
-              }
-            ]
-          },
-          {
-            "type": "ia.container.flex",
-            "props": {
-              "direction": "row",
-              "style": {
-                "gap": "16px",
-                "alignItems": "stretch"
-              }
-            },
-            "children": [
-              {
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "column",
-                  "style": {
-                    "backgroundColor": "#0D1B2E",
-                    "border": "1px solid #1E3D5C",
-                    "borderRadius": "12px",
-                    "padding": "16px 20px",
-                    "gap": "4px"
-                  }
                 },
-                "children": [
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "TOTAL FLOW RATE",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1.5px"
-                      }
-                    }
-                  },
-                  {
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "baseline",
-                        "gap": "4px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "244.0",
-                          "style": {
-                            "fontSize": "28px",
-                            "fontWeight": "700",
-                            "color": "#60A5FA"
-                          }
-                        }
-                      },
-                      {
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "L/min",
-                          "style": {
-                            "fontSize": "13px",
-                            "color": "#94A3B8"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "Combined FI-101 + FI-102",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#64748B"
-                      }
-                    }
-                  }
-                ],
                 "position": {
-                  "grow": 1
-                }
-              },
-              {
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "column",
-                  "style": {
-                    "backgroundColor": "#0D1B2E",
-                    "border": "1px solid #1E3D5C",
-                    "borderRadius": "12px",
-                    "padding": "16px 20px",
-                    "gap": "4px"
-                  }
-                },
-                "children": [
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "MIX TANK LEVEL",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1.5px"
-                      }
-                    }
-                  },
-                  {
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "baseline",
-                        "gap": "4px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "45.8",
-                          "style": {
-                            "fontSize": "28px",
-                            "fontWeight": "700",
-                            "color": "#8B5CF6"
-                          }
-                        }
-                      },
-                      {
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "%",
-                          "style": {
-                            "fontSize": "13px",
-                            "color": "#94A3B8"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "T-102 · 38.5 °C",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#64748B"
-                      }
-                    }
-                  }
-                ],
-                "position": {
-                  "grow": 1
-                }
-              },
-              {
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "column",
-                  "style": {
-                    "backgroundColor": "#0D1B2E",
-                    "border": "1px solid #1E3D5C",
-                    "borderRadius": "12px",
-                    "padding": "16px 20px",
-                    "gap": "4px"
-                  }
-                },
-                "children": [
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "ACTIVE ALARMS",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1.5px"
-                      }
-                    }
-                  },
-                  {
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "baseline",
-                        "gap": "4px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "2",
-                          "style": {
-                            "fontSize": "28px",
-                            "fontWeight": "700",
-                            "color": "#F59E0B"
-                          }
-                        }
-                      },
-                      {
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "",
-                          "style": {
-                            "fontSize": "13px",
-                            "color": "#94A3B8"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "1 High · 1 Warning",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#64748B"
-                      }
-                    }
-                  }
-                ],
-                "position": {
-                  "grow": 1
-                }
-              },
-              {
-                "type": "ia.container.flex",
-                "props": {
-                  "direction": "column",
-                  "style": {
-                    "backgroundColor": "#0D1B2E",
-                    "border": "1px solid #1E3D5C",
-                    "borderRadius": "12px",
-                    "padding": "16px 20px",
-                    "gap": "4px"
-                  }
-                },
-                "children": [
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "PRODUCT TANK",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "1.5px"
-                      }
-                    }
-                  },
-                  {
-                    "type": "ia.container.flex",
-                    "props": {
-                      "direction": "row",
-                      "style": {
-                        "alignItems": "baseline",
-                        "gap": "4px"
-                      }
-                    },
-                    "children": [
-                      {
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "85.2",
-                          "style": {
-                            "fontSize": "28px",
-                            "fontWeight": "700",
-                            "color": "#10B981"
-                          }
-                        }
-                      },
-                      {
-                        "type": "ia.display.label",
-                        "props": {
-                          "text": "%",
-                          "style": {
-                            "fontSize": "13px",
-                            "color": "#94A3B8"
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "T-103 · Ready",
-                      "style": {
-                        "fontSize": "11px",
-                        "color": "#64748B"
-                      }
-                    }
-                  }
-                ],
-                "position": {
-                  "grow": 1
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
                 }
               }
             ],
-            "meta": {
-              "name": "KPIRow"
+            "position": {
+              "grow": 0,
+              "shrink": 0,
+              "basis": "auto"
             }
           },
           {
             "type": "ia.container.flex",
+            "meta": {
+              "name": "flex"
+            },
             "props": {
-              "direction": "column",
+              "direction": "row",
+              "justify": "flex-start",
+              "alignItems": "stretch",
               "style": {
-                "backgroundColor": "#0D1B2E",
-                "border": "1px solid #1E3D5C",
-                "borderRadius": "16px",
-                "padding": "20px",
-                "gap": "12px",
-                "overflowX": "auto"
+                "gap": "1rem"
               }
             },
             "children": [
               {
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "column",
+                  "justify": "flex-start",
+                  "alignItems": "stretch",
+                  "style": {
+                    "gap": "0.25rem",
+                    "padding": "1rem 1.25rem",
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "12px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "TOTAL FLOW RATE",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1.5px",
+                        "fontWeight": "700",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "meta": {
+                      "name": "flex"
+                    },
+                    "props": {
+                      "direction": "row",
+                      "justify": "flex-start",
+                      "alignItems": "baseline",
+                      "style": {
+                        "gap": "0.375rem"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "244.0",
+                          "style": {
+                            "color": "#60A5FA",
+                            "fontSize": "1.75rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "L/min",
+                          "style": {
+                            "color": "#94A3B8",
+                            "fontSize": "0.8125rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Combined FI-101 + FI-102",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 1,
+                  "shrink": 1,
+                  "basis": "0%"
+                }
+              },
+              {
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "column",
+                  "justify": "flex-start",
+                  "alignItems": "stretch",
+                  "style": {
+                    "gap": "0.25rem",
+                    "padding": "1rem 1.25rem",
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "12px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "MIX TANK LEVEL",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1.5px",
+                        "fontWeight": "700",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "meta": {
+                      "name": "flex"
+                    },
+                    "props": {
+                      "direction": "row",
+                      "justify": "flex-start",
+                      "alignItems": "baseline",
+                      "style": {
+                        "gap": "0.375rem"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "45.8",
+                          "style": {
+                            "color": "#8B5CF6",
+                            "fontSize": "1.75rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "%",
+                          "style": {
+                            "color": "#94A3B8",
+                            "fontSize": "0.8125rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "T-102 · 38.5 °C",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 1,
+                  "shrink": 1,
+                  "basis": "0%"
+                }
+              },
+              {
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "column",
+                  "justify": "flex-start",
+                  "alignItems": "stretch",
+                  "style": {
+                    "gap": "0.25rem",
+                    "padding": "1rem 1.25rem",
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "12px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "ACTIVE ALARMS",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1.5px",
+                        "fontWeight": "700",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "meta": {
+                      "name": "flex"
+                    },
+                    "props": {
+                      "direction": "row",
+                      "justify": "flex-start",
+                      "alignItems": "baseline",
+                      "style": {
+                        "gap": "0.375rem"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "2",
+                          "style": {
+                            "color": "#F59E0B",
+                            "fontSize": "1.75rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "",
+                          "style": {
+                            "color": "#94A3B8",
+                            "fontSize": "0.8125rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "1 High · 1 Warning",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 1,
+                  "shrink": 1,
+                  "basis": "0%"
+                }
+              },
+              {
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "column",
+                  "justify": "flex-start",
+                  "alignItems": "stretch",
+                  "style": {
+                    "gap": "0.25rem",
+                    "padding": "1rem 1.25rem",
+                    "backgroundColor": "#0D1B2E",
+                    "border": "1px solid #1E3D5C",
+                    "borderRadius": "12px"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "PRODUCT TANK",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1.5px",
+                        "fontWeight": "700",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.container.flex",
+                    "meta": {
+                      "name": "flex"
+                    },
+                    "props": {
+                      "direction": "row",
+                      "justify": "flex-start",
+                      "alignItems": "baseline",
+                      "style": {
+                        "gap": "0.375rem"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "85.2",
+                          "style": {
+                            "color": "#10B981",
+                            "fontSize": "1.75rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal",
+                            "fontWeight": "700"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      },
+                      {
+                        "type": "ia.display.label",
+                        "meta": {
+                          "name": "lbl"
+                        },
+                        "props": {
+                          "text": "%",
+                          "style": {
+                            "color": "#94A3B8",
+                            "fontSize": "0.8125rem",
+                            "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                            "textAlign": "left",
+                            "letterSpacing": "normal"
+                          }
+                        },
+                        "position": {
+                          "grow": 0,
+                          "shrink": 0,
+                          "basis": "auto"
+                        }
+                      }
+                    ],
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "T-103 · Ready",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 1,
+                  "shrink": 1,
+                  "basis": "0%"
+                }
+              }
+            ],
+            "position": {
+              "grow": 0,
+              "shrink": 0,
+              "basis": "auto"
+            }
+          },
+          {
+            "type": "ia.container.flex",
+            "meta": {
+              "name": "flex"
+            },
+            "props": {
+              "direction": "column",
+              "justify": "flex-start",
+              "alignItems": "stretch",
+              "style": {
+                "gap": "0.75rem",
+                "padding": "1.25rem",
+                "backgroundColor": "#0D1B2E",
+                "border": "1px solid #1E3D5C",
+                "borderRadius": "16px",
+                "overflow": "auto"
+              }
+            },
+            "children": [
+              {
+                "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
+                "props": {
+                  "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {}
+                },
+                "children": [
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "PROCESS FLOW DIAGRAM",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "2px",
+                        "fontWeight": "700",
+                        "textTransform": "uppercase"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Live  ·  Auto-refresh 5s",
+                      "style": {
+                        "color": "#64748B",
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  }
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
+              },
+              {
                 "type": "ia.container.coord",
+                "meta": {
+                  "name": "PID"
+                },
                 "props": {
                   "style": {
                     "width": "1190px",
@@ -433,40 +830,9 @@
                 "children": [
                   {
                     "type": "ia.display.label",
-                    "props": {
-                      "text": "PROCESS FLOW DIAGRAM",
-                      "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "letterSpacing": "2px"
-                      }
+                    "meta": {
+                      "name": "lbl_T-101_T-10"
                     },
-                    "position": {
-                      "x": 0,
-                      "y": 0,
-                      "width": 300,
-                      "height": 16
-                    }
-                  },
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "Live  ·  Auto-refresh 5s",
-                      "style": {
-                        "fontSize": "10px",
-                        "color": "#64748B"
-                      }
-                    },
-                    "position": {
-                      "x": 1050,
-                      "y": 0,
-                      "width": 140,
-                      "height": 16
-                    }
-                  },
-                  {
-                    "type": "ia.display.label",
                     "props": {
                       "text": "T-101",
                       "style": {
@@ -486,6 +852,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-101_FEED"
+                    },
                     "props": {
                       "text": "FEED TANK",
                       "style": {
@@ -503,6 +872,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-101_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -520,6 +892,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-101_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -536,6 +911,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-101_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -552,6 +930,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-101_72.5"
+                    },
                     "props": {
                       "text": "72.5%",
                       "style": {
@@ -570,6 +951,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-101_⚡ 22"
+                    },
                     "props": {
                       "text": "⚡ 22.3°C  ⧉ 1.2 bar",
                       "style": {
@@ -591,6 +975,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-102_T-10"
+                    },
                     "props": {
                       "text": "T-102",
                       "style": {
@@ -610,6 +997,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-102_MIX "
+                    },
                     "props": {
                       "text": "MIX TANK",
                       "style": {
@@ -627,6 +1017,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-102_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -644,6 +1037,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-102_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -660,6 +1056,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-102_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -676,6 +1075,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-102_45.8"
+                    },
                     "props": {
                       "text": "45.8%",
                       "style": {
@@ -694,6 +1096,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-102_⚡ 38"
+                    },
                     "props": {
                       "text": "⚡ 38.5°C  ⧉ 1.8 bar",
                       "style": {
@@ -715,6 +1120,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-103_T-10"
+                    },
                     "props": {
                       "text": "T-103",
                       "style": {
@@ -734,6 +1142,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-103_PROD"
+                    },
                     "props": {
                       "text": "PRODUCT TANK",
                       "style": {
@@ -751,6 +1162,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-103_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -768,6 +1182,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-103_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -784,6 +1201,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-103_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -800,6 +1220,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-103_85.2"
+                    },
                     "props": {
                       "text": "85.2%",
                       "style": {
@@ -818,6 +1241,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-103_⚡ 23"
+                    },
                     "props": {
                       "text": "⚡ 23.1°C  ⧉ 1.1 bar",
                       "style": {
@@ -839,6 +1265,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-104_T-10"
+                    },
                     "props": {
                       "text": "T-104",
                       "style": {
@@ -858,6 +1287,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-104_CHEM"
+                    },
                     "props": {
                       "text": "CHEM ADDITIVE",
                       "style": {
@@ -875,6 +1307,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-104_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -892,6 +1327,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-104_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -908,6 +1346,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-104_"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -924,6 +1365,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-104_31.4"
+                    },
                     "props": {
                       "text": "31.4%",
                       "style": {
@@ -942,6 +1386,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl_T-104_⚡ 18"
+                    },
                     "props": {
                       "text": "⚡ 18.0°C  ⧉ 0.8 bar",
                       "style": {
@@ -963,6 +1410,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "ph"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -979,6 +1429,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pv"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -995,6 +1448,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pv"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -1011,6 +1467,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pv"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -1027,6 +1486,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pv"
+                    },
                     "props": {
                       "text": "",
                       "style": {
@@ -1043,6 +1505,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "vFV-105"
+                    },
                     "props": {
                       "text": "FV-105",
                       "style": {
@@ -1060,6 +1525,9 @@
                   },
                   {
                     "type": "ia.input.button",
+                    "meta": {
+                      "name": "bFV-105"
+                    },
                     "props": {
                       "text": "OPEN",
                       "style": {
@@ -1070,17 +1538,6 @@
                         "fontWeight": "700",
                         "borderRadius": "4px",
                         "cursor": "pointer"
-                      },
-                      "events": {
-                        "dom": {
-                          "onClick": {
-                            "type": "script",
-                            "scope": "G",
-                            "config": {
-                              "script": "\tsystem.perspective.print('FV-105 toggled')"
-                            }
-                          }
-                        }
                       }
                     },
                     "position": {
@@ -1092,6 +1549,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "vFV-105"
+                    },
                     "props": {
                       "text": "100%",
                       "style": {
@@ -1109,6 +1569,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "vFV-101"
+                    },
                     "props": {
                       "text": "FV-101",
                       "style": {
@@ -1126,6 +1589,9 @@
                   },
                   {
                     "type": "ia.input.button",
+                    "meta": {
+                      "name": "bFV-101"
+                    },
                     "props": {
                       "text": "OPEN",
                       "style": {
@@ -1136,17 +1602,6 @@
                         "fontWeight": "700",
                         "borderRadius": "4px",
                         "cursor": "pointer"
-                      },
-                      "events": {
-                        "dom": {
-                          "onClick": {
-                            "type": "script",
-                            "scope": "G",
-                            "config": {
-                              "script": "\tsystem.perspective.print('FV-101 toggled')"
-                            }
-                          }
-                        }
                       }
                     },
                     "position": {
@@ -1158,6 +1613,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "vFV-101"
+                    },
                     "props": {
                       "text": "100%",
                       "style": {
@@ -1175,6 +1633,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "vFV-102"
+                    },
                     "props": {
                       "text": "FV-102",
                       "style": {
@@ -1192,6 +1653,9 @@
                   },
                   {
                     "type": "ia.input.button",
+                    "meta": {
+                      "name": "bFV-102"
+                    },
                     "props": {
                       "text": "OPEN",
                       "style": {
@@ -1202,17 +1666,6 @@
                         "fontWeight": "700",
                         "borderRadius": "4px",
                         "cursor": "pointer"
-                      },
-                      "events": {
-                        "dom": {
-                          "onClick": {
-                            "type": "script",
-                            "scope": "G",
-                            "config": {
-                              "script": "\tsystem.perspective.print('FV-102 toggled')"
-                            }
-                          }
-                        }
                       }
                     },
                     "position": {
@@ -1224,6 +1677,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "vFV-102"
+                    },
                     "props": {
                       "text": "100%",
                       "style": {
@@ -1241,6 +1697,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "vFV-103"
+                    },
                     "props": {
                       "text": "FV-103",
                       "style": {
@@ -1258,6 +1717,9 @@
                   },
                   {
                     "type": "ia.input.button",
+                    "meta": {
+                      "name": "bFV-103"
+                    },
                     "props": {
                       "text": "65%",
                       "style": {
@@ -1268,17 +1730,6 @@
                         "fontWeight": "700",
                         "borderRadius": "4px",
                         "cursor": "pointer"
-                      },
-                      "events": {
-                        "dom": {
-                          "onClick": {
-                            "type": "script",
-                            "scope": "G",
-                            "config": {
-                              "script": "\tsystem.perspective.print('FV-103 toggled')"
-                            }
-                          }
-                        }
                       }
                     },
                     "position": {
@@ -1290,6 +1741,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "vFV-103"
+                    },
                     "props": {
                       "text": "65%",
                       "style": {
@@ -1307,6 +1761,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "vFV-104"
+                    },
                     "props": {
                       "text": "FV-104",
                       "style": {
@@ -1324,6 +1781,9 @@
                   },
                   {
                     "type": "ia.input.button",
+                    "meta": {
+                      "name": "bFV-104"
+                    },
                     "props": {
                       "text": "OPEN",
                       "style": {
@@ -1334,17 +1794,6 @@
                         "fontWeight": "700",
                         "borderRadius": "4px",
                         "cursor": "pointer"
-                      },
-                      "events": {
-                        "dom": {
-                          "onClick": {
-                            "type": "script",
-                            "scope": "G",
-                            "config": {
-                              "script": "\tsystem.perspective.print('FV-104 toggled')"
-                            }
-                          }
-                        }
                       }
                     },
                     "position": {
@@ -1356,6 +1805,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "vFV-104"
+                    },
                     "props": {
                       "text": "100%",
                       "style": {
@@ -1373,6 +1825,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pP-101"
+                    },
                     "props": {
                       "text": "P-101",
                       "style": {
@@ -1390,6 +1845,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pP-101"
+                    },
                     "props": {
                       "text": "◎ RUN",
                       "style": {
@@ -1414,6 +1872,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pP-101"
+                    },
                     "props": {
                       "text": "1450 RPM",
                       "style": {
@@ -1431,6 +1892,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pP-102"
+                    },
                     "props": {
                       "text": "P-102",
                       "style": {
@@ -1448,6 +1912,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pP-102"
+                    },
                     "props": {
                       "text": "◎ RUN",
                       "style": {
@@ -1472,6 +1939,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pP-102"
+                    },
                     "props": {
                       "text": "1480 RPM",
                       "style": {
@@ -1489,6 +1959,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "fiFI-101"
+                    },
                     "props": {
                       "text": "FI-101",
                       "style": {
@@ -1506,6 +1979,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "fiFI-101"
+                    },
                     "props": {
                       "text": "125.3 L/min",
                       "style": {
@@ -1528,6 +2004,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "fiFI-102"
+                    },
                     "props": {
                       "text": "FI-102",
                       "style": {
@@ -1545,6 +2024,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "fiFI-102"
+                    },
                     "props": {
                       "text": "118.7 L/min",
                       "style": {
@@ -1567,6 +2049,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pbar"
+                    },
                     "props": {
                       "text": "1.2 bar",
                       "style": {
@@ -1584,6 +2069,9 @@
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "pbar"
+                    },
                     "props": {
                       "text": "1.8 bar",
                       "style": {
@@ -1599,78 +2087,140 @@
                       "height": 12
                     }
                   }
-                ],
-                "meta": {
-                  "name": "ProcessDiagram"
-                }
+                ]
               }
-            ]
+            ],
+            "position": {
+              "grow": 0,
+              "shrink": 0,
+              "basis": "auto"
+            }
           },
           {
             "type": "ia.container.flex",
+            "meta": {
+              "name": "flex"
+            },
             "props": {
               "direction": "column",
+              "justify": "flex-start",
+              "alignItems": "stretch",
               "style": {
-                "gap": "8px"
+                "gap": "0.5rem"
               }
             },
             "children": [
               {
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "row",
-                  "style": {
-                    "alignItems": "center",
-                    "justifyContent": "space-between"
-                  }
+                  "justify": "flex-start",
+                  "alignItems": "center",
+                  "style": {}
                 },
                 "children": [
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
                     "props": {
                       "text": "ACTIVE ALARMS",
                       "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
                         "color": "#94A3B8",
-                        "letterSpacing": "1.5px"
+                        "fontSize": "0.625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "1.5px",
+                        "fontWeight": "700",
+                        "textTransform": "uppercase"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "",
+                      "style": {
+                        "color": "#E2E8F0",
+                        "fontSize": "0.875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
                     }
                   },
                   {
                     "type": "ia.input.button",
+                    "meta": {
+                      "name": "btn"
+                    },
                     "props": {
                       "text": "View All →",
                       "style": {
-                        "fontSize": "11px",
-                        "color": "#60A5FA",
                         "backgroundColor": "transparent",
+                        "color": "#60A5FA",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
                         "border": "none",
-                        "cursor": "pointer"
-                      },
-                      "events": {
-                        "dom": {
-                          "onClick": {
-                            "type": "script",
-                            "scope": "G",
-                            "config": {
-                              "script": "\tsystem.perspective.navigate('/alarms')"
-                            }
+                        "borderRadius": "6px",
+                        "cursor": "pointer",
+                        "padding": "0.375rem 0.875rem"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    },
+                    "events": {
+                      "component": {
+                        "onActionPerformed": {
+                          "type": "script",
+                          "scope": "G",
+                          "config": {
+                            "script": "system.perspective.navigate(page='/alarms')"
                           }
                         }
                       }
                     }
                   }
-                ]
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
                   "style": {
-                    "alignItems": "center",
-                    "gap": "12px",
-                    "padding": "10px 16px",
+                    "gap": "0.75rem",
+                    "padding": "0.625rem 1rem",
                     "backgroundColor": "#0D1B2E",
                     "border": "1px solid #1E3D5C",
                     "borderRadius": "8px"
@@ -1679,79 +2229,138 @@
                 "children": [
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "sev"
+                    },
                     "props": {
                       "text": "HIGH",
                       "style": {
-                        "backgroundColor": "#F59E0B",
                         "color": "#070D1A",
-                        "fontSize": "9px",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
                         "fontWeight": "700",
-                        "padding": "2px 8px",
+                        "pad": "2px 8px",
+                        "backgroundColor": "#F59E0B",
                         "borderRadius": "4px"
-                      }
-                    }
-                  },
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "T-102",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#F59E0B",
-                        "minWidth": "80px"
-                      }
-                    }
-                  },
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "Mix tank temperature exceeds 40 °C setpoint",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#94A3B8"
                       }
                     },
                     "position": {
-                      "grow": 1
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "T-102",
+                      "style": {
+                        "color": "#F59E0B",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "minWidth": "80px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Mix tank temperature exceeds 40 °C setpoint",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
                     "props": {
                       "text": "14:31",
                       "style": {
-                        "fontSize": "11px",
-                        "color": "#64748B"
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
                     "type": "ia.input.button",
+                    "meta": {
+                      "name": "btn"
+                    },
                     "props": {
                       "text": "ACK",
                       "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#60A5FA",
                         "backgroundColor": "transparent",
+                        "color": "#60A5FA",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
                         "border": "1px solid #2D7DD2",
-                        "borderRadius": "4px",
-                        "padding": "3px 10px",
-                        "cursor": "pointer"
+                        "borderRadius": "6px",
+                        "cursor": "pointer",
+                        "padding": "0.375rem 0.875rem"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   }
-                ]
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               },
               {
                 "type": "ia.container.flex",
+                "meta": {
+                  "name": "flex"
+                },
                 "props": {
                   "direction": "row",
+                  "justify": "flex-start",
+                  "alignItems": "center",
                   "style": {
-                    "alignItems": "center",
-                    "gap": "12px",
-                    "padding": "10px 16px",
+                    "gap": "0.75rem",
+                    "padding": "0.625rem 1rem",
                     "backgroundColor": "#0D1B2E",
                     "border": "1px solid #1E3D5C",
                     "borderRadius": "8px"
@@ -1760,84 +2369,140 @@
                 "children": [
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "sev"
+                    },
                     "props": {
                       "text": "WARN",
                       "style": {
+                        "color": "#0D1B2E",
+                        "fontSize": "0.5625rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "pad": "2px 8px",
                         "backgroundColor": "#94A3B8",
-                        "color": "#070D1A",
-                        "fontSize": "9px",
-                        "fontWeight": "700",
-                        "padding": "2px 8px",
                         "borderRadius": "4px"
-                      }
-                    }
-                  },
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "P-101",
-                      "style": {
-                        "fontSize": "12px",
-                        "fontWeight": "700",
-                        "color": "#94A3B8",
-                        "minWidth": "80px"
-                      }
-                    }
-                  },
-                  {
-                    "type": "ia.display.label",
-                    "props": {
-                      "text": "Pump P-101 current draw above nominal 18 A",
-                      "style": {
-                        "fontSize": "12px",
-                        "color": "#94A3B8"
                       }
                     },
                     "position": {
-                      "grow": 1
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
                     "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "P-101",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal",
+                        "fontWeight": "700",
+                        "minWidth": "80px"
+                      }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
+                    "props": {
+                      "text": "Pump P-101 current draw above nominal 18 A",
+                      "style": {
+                        "color": "#94A3B8",
+                        "fontSize": "0.75rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
+                      }
+                    },
+                    "position": {
+                      "grow": 1,
+                      "shrink": 1,
+                      "basis": "0%"
+                    }
+                  },
+                  {
+                    "type": "ia.display.label",
+                    "meta": {
+                      "name": "lbl"
+                    },
                     "props": {
                       "text": "14:28",
                       "style": {
-                        "fontSize": "11px",
-                        "color": "#64748B"
+                        "color": "#64748B",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "textAlign": "left",
+                        "letterSpacing": "normal"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   },
                   {
                     "type": "ia.input.button",
+                    "meta": {
+                      "name": "btn"
+                    },
                     "props": {
                       "text": "ACK",
                       "style": {
-                        "fontSize": "10px",
-                        "fontWeight": "700",
-                        "color": "#60A5FA",
                         "backgroundColor": "transparent",
+                        "color": "#60A5FA",
+                        "fontSize": "0.6875rem",
+                        "fontFamily": "'Inter', 'Barlow', 'Helvetica Neue', Arial, sans-serif",
+                        "letterSpacing": "normal",
                         "border": "1px solid #2D7DD2",
-                        "borderRadius": "4px",
-                        "padding": "3px 10px",
-                        "cursor": "pointer"
+                        "borderRadius": "6px",
+                        "cursor": "pointer",
+                        "padding": "0.375rem 0.875rem"
                       }
+                    },
+                    "position": {
+                      "grow": 0,
+                      "shrink": 0,
+                      "basis": "auto"
                     }
                   }
-                ]
+                ],
+                "position": {
+                  "grow": 0,
+                  "shrink": 0,
+                  "basis": "auto"
+                }
               }
             ],
-            "meta": {
-              "name": "AlarmStrip"
+            "position": {
+              "grow": 0,
+              "shrink": 0,
+              "basis": "auto"
             }
           }
         ],
         "position": {
-          "grow": 1
+          "grow": 1,
+          "shrink": 1,
+          "basis": "0%"
         }
       }
-    ],
-    "meta": {
-      "name": "root"
-    }
+    ]
   }
 }
