@@ -1,17 +1,26 @@
 {
-  "paths": {
+  "pages": {
     "/": {
-      "view": "Overview"
+      "title": "FluidSCADA \u2014 Overview",
+      "viewPath": "Overview"
     },
     "/tanks": {
-      "view": "Tanks"
+      "title": "Tank Status",
+      "viewPath": "Tanks"
     },
     "/trends": {
-      "view": "Trends"
+      "title": "Trends",
+      "viewPath": "Trends"
     },
     "/alarms": {
-      "view": "Alarms"
+      "title": "Alarms",
+      "viewPath": "Alarms"
     }
   },
-  "defaultPath": "/"
+  "sharedDocks": {
+    "cornerPriority": "top-bottom",
+    "bottom": [],
+    "left": [],
+    "right": []
+  }
 }

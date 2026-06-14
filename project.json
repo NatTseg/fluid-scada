@@ -1,7 +1,7 @@
 {
   "title": "FluidSCADA",
-  "description": "Fluid Process SCADA — tanks, pumps, valves, flow control",
-  "parent": "global",
+  "description": "Fluid Process SCADA",
+  "parent": "",
   "enabled": true,
   "inheritable": false
 }
